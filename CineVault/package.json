@@ -1,0 +1,34 @@
+{
+  "name": "cine-vault",
+  "version": "1.0.0",
+  "description": "Cine Vault - filmes por pasta de g\u00eanero com trilha de fundo",
+  "main": "electron/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --linux AppImage deb"
+  },
+  "build": {
+    "appId": "com.cinevault.app",
+    "productName": "CineVault",
+    "files": [
+      "electron/**/*",
+      "web/**/*"
+    ],
+    "extraMetadata": {
+      "main": "electron/main.js"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "category": "AudioVideo",
+      "maintainer": "Cine Vault <cinevault@localhost>"
+    }
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0"
+  },
+  "author": "Cine Vault"
+}

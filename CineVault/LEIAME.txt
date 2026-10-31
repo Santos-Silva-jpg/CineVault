@@ -1,0 +1,12 @@
+CINE VAULT (Linux)
+==================
+web/index.html - programa | web/style.css - visual | web/app.js - logica
+web/assets/music - trilhas (Sonic, Tekken 4, Life Is Strange)
+
+USAR
+1) Rapido:   ./abrir.sh   (abre em janela de app no Chrome/Chromium; Chromecast funciona)
+2) Atalho:   ./instalar_atalho.sh  (aparece no menu de aplicativos)
+3) Executavel: ./gerar_executavel.sh  (precisa de Node.js/npm e internet na 1a vez)
+   Gera dist/CineVault-*.AppImage e .deb
+   Obs.: no AppImage (Electron) nao existe Chromecast nativo; para transmitir use o abrir.sh
+   com Chrome, ou o menu do Chrome: Salvar e compartilhar > Transmitir.

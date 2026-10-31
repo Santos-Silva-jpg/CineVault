@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cine Vault</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside class="sidebar">
+  <div class="brand"><img src="assets/logo.jpg" alt="Logo"><div class="brand-name">Cine Vault</div></div>
+  <nav id="nav"></nav>
+  <button class="add-folder" id="addFolder">+ Nova pasta de gênero</button>
+  <div class="bgm">
+    ♪ Trilha da pasta<b id="bgmName">—</b>
+    <div class="row">
+      <button class="btn" id="bgmToggle">⏵ Tocar</button>
+      <button class="btn" id="bgmChange">Trocar música</button>
+    </div>
+  </div>
+</aside>
+<div class="main">
+  <div class="topbar"><span class="lbl" id="count"></span><input class="search" id="q" placeholder="Buscar filme..."></div>
+  <div class="content">
+    <h1 class="page-title" id="title"></h1>
+    <div id="hero"></div>
+    <div id="list"></div>
+    <div class="row" style="margin-top:22px">
+      <button class="btn pri" id="addMovies">+ Adicionar filmes</button>
+      <button class="btn" id="addLink">+ Adicionar por link</button>
+    </div>
+  </div>
+</div>
+<div class="modal" id="modal">
+  <h3 id="mTitle"></h3>
+  <video id="vid" controls playsinline></video>
+  <div class="row"><button class="btn pri" id="cast">📡 Transmitir (Chromecast)</button><button class="btn" id="close">Fechar</button></div>
+</div>
+<div class="toast" id="toast"></div>
+<input type="file" id="fMovies" accept="video/*" multiple hidden>
+<input type="file" id="fCover" accept="image/*" hidden>
+<input type="file" id="fMusic" accept="audio/*" hidden>
+<audio id="bgm" loop></audio>
+<script src="app.js"></script>
+</body>
+</html>
