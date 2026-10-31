@@ -1,3 +1,4 @@
+<img src = "image.png">
 # 🎬 Cine Vault
 
 [English](#-english) · [Português](#-português)
