@@ -1,4 +1,3 @@
-<img src = "image.png">
 # 🎬 Cine Vault
 
 [English](#-english) · [Português](#-português)
@@ -25,6 +24,7 @@ Cine Vault is a small personal movie and series organizer. You sort your videos 
 - **Search** by title.
 - **Chromecast button** in the player (see limitations below).
 - **Storage meter** in the top bar, and automatic cleanup of leftover files.
+<img src = "image.png">
 
 ### Project structure
 
